@@ -1,0 +1,125 @@
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+      rel="stylesheet"
+    />
+    <title>Dictionary</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="hero is-info">
+      <div class="hero-body">
+        <p class="title has-text-centered">Free English Dictionary</p>
+      </div>
+    </header>
+
+    <!--Search-->
+    <section class="section">
+      <div class="field has-addons">
+        <div class="control is-expanded">
+          <input
+            class="input is-large is-fullwidth"
+            id="define-input"
+            placeholder="Enter a word"
+            type="text"
+            value="Hello"
+          />
+        </div>
+        <div class="control">
+          <a class="button is-info is-large" id="define-btn"> Define </a>
+        </div>
+      </div>
+    </section>
+
+    <!--Output-->
+    <section class="section is-medium pt-0 pb-6" id="phonetics">
+      <h1 class="title">Phonetics</h1>
+      <article class="message is-medium">
+        <div class="message-header">/həˈloʊ/</div>
+        <div class="message-body">
+          <audio controls style="width: 100%">
+            <source
+              src="https://lex-audio.useremarkable.com/mp3/hello_us_1_rr.mp3"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </article>
+
+      <article class="message is-medium">
+        <div class="message-header">/hɛˈloʊ/</div>
+        <div class="message-body">
+          <audio controls style="width: 100%">
+            <source
+              src="https://lex-audio.useremarkable.com/mp3/hello_us_2_rr.mp3"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </article>
+    </section>
+
+    <section class="section is-medium pt-0 pb-6" id="definitions">
+      <h1 class="title">Definitions</h1>
+      <article class="message is-info is-medium">
+        <div class="message-header">
+          <p>exclamation</p>
+        </div>
+        <div class="message-body">
+          <div class="content">
+            <ul style="margin-top: 0">
+              <li>Used as a greeting or to begin a phone conversation.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="message is-info is-medium">
+        <div class="message-header">
+          <p>noun</p>
+        </div>
+        <div class="message-body">
+          <div class="content">
+            <ul style="margin-top: 0">
+              <li>An utterance of “hello”; a greeting.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="message is-info is-medium">
+        <div class="message-header">
+          <p>intransitive verb</p>
+        </div>
+        <div class="message-body">
+          <div class="content">
+            <ul style="margin-top: 0">
+              <li>Say or shout “hello”; greet someone.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        This program uses the
+        <a href="https://dictionaryapi.dev/" target="_blank"
+          >Free Dictionary API</a
+        >.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
